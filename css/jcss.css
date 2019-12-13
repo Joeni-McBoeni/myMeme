@@ -1,0 +1,97 @@
+
+/* 
+    Filename   : jcss.css
+    Created On : 20.03.2019, 11:10:47
+    Author     : Jonas Wiesli <jonas.wiesli at stud.kftg.ch>
+*/
+
+* {
+    font-family: Bahnschrift;
+}
+
+body {
+    background-color: #23272A;
+    color: whitesmoke;
+    font-size: 30pt;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        font-size: 16pt;
+    }
+    
+    h1 {
+        font-size: 22pt;
+    }
+}
+
+.fixer-container {
+    height: 800px;
+}
+
+header {
+
+}
+
+nav {
+
+}
+
+main {
+
+}
+
+footer {
+    
+}
+
+input {
+    margin: 1%;
+}
+
+.decl {
+    margin: 1%;
+}
+
+select {
+    margin: 1%;
+}
+
+
+
+/* In die Mitte floaten: */
+
+.main-container {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+    
+.fixer-container {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+/* Quelle: https://stackoverflow.com/questions/4767971/how-do-i-center-float-elements */ 
+
+#image-holder {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block;
+}
+
+/* Quelle: https://www.researchgate.net/post/Is_there_any_Java_Script_code_to_open_pictures_on_a_new_window_using_JavaScript_and_HTML_codes_CSS */
