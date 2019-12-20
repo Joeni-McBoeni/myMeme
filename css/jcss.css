@@ -1,5 +1,5 @@
 
-/* 
+/*
     Filename   : jcss.css
     Created On : 20.03.2019, 11:10:47
     Author     : Jonas Wiesli <jonas.wiesli at stud.kftg.ch>
@@ -26,7 +26,7 @@ h1 {
     body {
         font-size: 16pt;
     }
-    
+
     h1 {
         font-size: 22pt;
     }
@@ -49,7 +49,7 @@ main {
 }
 
 footer {
-    
+
 }
 
 input {
@@ -73,24 +73,25 @@ select {
     position: relative;
     left: 50%;
 }
-    
+
 .fixer-container {
     float: left;
     position: relative;
     left: -50%;
 }
 
-/* Quelle: https://stackoverflow.com/questions/4767971/how-do-i-center-float-elements */ 
+/* Quelle: https://stackoverflow.com/questions/4767971/how-do-i-center-float-elements */
 
 #image-holder {
   width: 500px;
   height: auto;
   position: absolute;
-  left: 0; 
-  right: 0; 
+  left: 0;
+  right: 0;
   bottom: 0;
-  margin-left: auto; 
-  margin-right: auto; 
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
 

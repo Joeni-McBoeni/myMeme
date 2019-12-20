@@ -91,7 +91,7 @@ Hey, there's no rule against reusing my own work, is there?
             if (!$image) {
               return null;
             }
-            
+
             // 2. Create a thumbnail and resize the loaded $image
             // - get the image dimensions
             // - define the output size appropriately
@@ -187,9 +187,7 @@ Hey, there's no rule against reusing my own work, is there?
             }
             if (in_array(substr($datei, -3, 3), array('jpg'))) {
               echo '<div style="float: left; height: 200px; width: 150px; font-size: 20px; word-wrap: break-word; margin: 10px;" onclick="showImage(\'' . $verzeichnis . $datei . '\')">';
-              if (file_exists($thumbverzeichnis . 'thumb_' . $datei)) {
-
-              } else {
+              if (!file_exists($thumbverzeichnis . 'thumb_' . $datei)) {
                 createThumbnail($verzeichnis . $datei, $thumbverzeichnis . 'thumb_' . $datei, 150);
               }
               echo '<img src="' . $thumbverzeichnis . 'thumb_' . $datei . ' "><br>';
